@@ -1,0 +1,36 @@
+{
+  "name": "code-assistant",
+  "displayName": "Code Assistant",
+  "description": "Edit and chat about your code with AI",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "code-assistant.openChat",
+        "title": "Code Assistant: Open Chat"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p .",
+    "watch": "tsc -watch -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.104.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.0.0"
+  }
+}
